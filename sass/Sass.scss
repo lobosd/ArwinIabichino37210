@@ -1,0 +1,218 @@
+@import "hermanos";
+@import "contacto";
+@import "variables";
+@import "general";
+/*========================================================Index.html========================================================*/
+
+
+.imagenAMDVSINTEL{
+  grid-area: imagenintelvsamd;
+  width: 100%;
+}
+
+.imagenINTEL{
+  grid-area: imagenintel;
+  width: 100%;
+}
+
+.imagenAMD{
+  grid-area: imagenamd;
+  width: 100%;
+}
+
+.gridindex{
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row: auto;
+  grid-template-areas: 
+    'imagenamd'
+    'imagenintelvsamd'
+    'imagenintel';
+  justify-items: center;
+}
+
+  
+ 
+   /*========================================================Header========================================================*/
+   .navbar-toggler {
+    margin: 0px;
+  }
+
+header ul {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+header h1{
+  margin: 0 0 10px 0;
+  color: black;
+ 
+} 
+ 
+/*========================================================MAIN========================================================*/
+
+
+main h2{
+  text-align: center;
+  color: black;
+  
+}
+
+footer h1{
+  color: black;
+
+}
+ /*=======================UBICACION====================*/
+
+ .ubicacion {
+  width: 100%;
+  height: 520px;
+  padding: 4px;
+  position: static;
+}
+
+
+/*================================================================================================================*/
+
+
+  /*=======================TABLET====================*/
+
+@media screen and (min-width:600px){
+
+  /*=======================UBICACION====================*/
+
+ .ubicacion {
+  width: 100%;
+  height: 900px;
+  padding: 4px;
+  position: static;
+}
+
+
+/*================================================================================================================*/
+
+/*========================================================Form========================================================*/
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  height: 870px;
+align-items: center;
+margin-top: 40px;
+}
+
+form li + li {
+  margin-top: 8em;
+}
+input,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1.2em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+  }
+
+  #msg {
+    height: 120px;
+  }
+
+
+  /*========================================================Header========================================================*/
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }  
+  header h1{
+    margin: 5px;
+    font-size: 15px;
+   
+  }
+  header nav {
+    height:100%;
+    width: 100%;
+  }
+
+  header ul {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1px;
+  }
+  
+  header li{
+    font-size: 1rem;
+  }
+/*========================================================MAIN========================================================*/
+main{
+  width: 100%;
+  display: block;
+  flex-direction: row;
+}
+
+.productosintel {
+ display: block;
+}
+
+.productosintel img{
+  height: auto;
+
+}
+
+.productosamd {
+  display: block;
+ }
+
+.productosamd img{
+  height: auto;
+   
+}
+.footers{
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+justify-content: center;
+background: transparent;
+}
+
+}
+
+@media screen and (min-width:940px){
+  
+  .gridindex{
+    display:flex;
+  }
+  .gridindex img{
+    width: 700px;
+    height: 700px;
+    padding: 2px;
+  }
+  .tienda{
+    display: flex;
+  }
+  .tienda img{
+    width: 1020px;
+    height: 700px;
+    padding: 2px;
+  }
+  .ubicacion {
+    width: 2100px;
+    height: 750px;
+    padding: 10px;
+    position: static;
+  }
+}

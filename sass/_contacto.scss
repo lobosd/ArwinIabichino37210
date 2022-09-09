@@ -1,0 +1,57 @@
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    height: 480px;
+align-items: center;
+margin-top: 40px;
+
+  }
+  
+  ul{
+    list-style: none;
+  }
+  form li + li {
+    margin-top: 2em;
+  }
+  
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline;
+    width: 90px;
+    height: 90px;
+    text-align: right;
+    color: black;
+  }
+  
+  input,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+  
+  
+  }
+
+  textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+  
+  .button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+  }
+  
+  button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    margin-left: 7.5em;
+  }
